@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Krumlovská 36"
 description              : "Turistiský pochod Krumlovská 36"
-url                      : "https://hroch92.github.io"
+url                      : "https://krumlovska36.cz" # the base hostname & protocol for your site
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -121,7 +121,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.name@email.com"
+      url: "mailto:corotop@seznam.cz"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
