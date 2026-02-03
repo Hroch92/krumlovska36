@@ -1,0 +1,16 @@
+# main links
+main:
+  - title: "Trasy"
+    url: /trasy/
+  - title: "Historie"
+    url: /historie/
+  - title: "Partneři"
+    url: /partneri/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
