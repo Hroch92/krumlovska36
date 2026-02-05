@@ -7,9 +7,9 @@ show_overlay_excerpt: false
 header:
   overlay_image: /assets/images/home-header.jpg
 ---
-Zveme všechny příznivce pohybu na již **43\. ročník** turistické a cykloturistické akce **Krumlovská 36**.
+Zveme všechny příznivce pohybu na již **44\. ročník** turistické a cykloturistické akce **Krumlovská 36**.
 
-**Termín: 24. květen 2025**
+**Termín: 23. květen 2026**
 
 Pěší trasy: 10, 15, 17, 25, 36, 50  
 Cyklistické trasy: 30, 65 km (ideální trekingové kolo)  
@@ -45,3 +45,4 @@ Každý účastník obdrží startovní číslo a v cíli občerstvení (párek,
 Podrobné info v sekci [Trasy](/trasy/).
 
 Novinky o dění, přípomínky a náměty můžete sledovat i na naší [facebookové stránce](http://facebook.com/krumlovska36).
+
