@@ -36,7 +36,7 @@ Každý účastník obdrží startovní číslo a v cíli občerstvení (párek,
 **17km** - U Blondýny - Rakšice - HM - Budkovice  - Rokytná - U Blondýny  
 **25km** - U Blondýny - Mokřad pod Městskou lesovnou - Němčická hájenka - Budkovice - Rokytná - U Blondýny  
 **36km** - U Blondýny - Polánka - Řeznovice - Ivančice - Hlína - Budkovice - U Blondýny  
-**50km** - U Blondýny - Dobřínsko - Jamolice - Senorady - Čučice - Ivančice - Budkovice - Rokytná - U Blondýny
+**50km** - U Blondýny - Dobřínsko - Templštýn - Senorady - Oslavany - Ivančice - Budkovice - Rokytná - U Blondýny
 
 **30km cyklo** - U Blondýny - Vémyslice - Rešice - Dukovany - D.Dubňany - U Blondýny  
 **65km cyklo** - U Blondýny - Dobřínsko - D.Dubňany - H.Dubňany - Dukovany - Kramolín - Dalešice - Hrotovice - Rouchovany - Rešice - Tulešice - Rybníky - U Blondýny
