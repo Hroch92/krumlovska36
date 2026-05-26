@@ -8,19 +8,37 @@ layout: nil
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Přesměrování...</title>
     <meta name="robots" content="noindex, nofollow">
-    <meta http-equiv="refresh" content="2;url={{ page.redirect_to | escape }}">
-    <script
-      data-goatcounter="https://krumlovska36.goatcounter.com/count"
-      src="//gc.zgo.at/count.js"></script>
   </head>
   <body data-redirect-to="{{ page.redirect_to | escape }}">
     <p>Přesměrování...</p>
+    <img
+      id="goatcounter-pixel"
+      src="https://krumlovska36.goatcounter.com/count?p={{ page.url | uri_escape }}"
+      alt=""
+      width="1"
+      height="1"
+      style="position:absolute;left:-9999px;width:1px;height:1px"
+      referrerpolicy="no-referrer-when-downgrade">
     <script>
       (function () {
         var target = document.body.getAttribute("data-redirect-to") || "/";
-        setTimeout(function () {
+        var redirected = false;
+        var pixel = document.getElementById("goatcounter-pixel");
+
+        function go() {
+          if (redirected) {
+            return;
+          }
+          redirected = true;
           window.location.replace(target);
-        }, 350);
+        }
+
+        if (pixel) {
+          pixel.addEventListener("load", go, { once: true });
+          pixel.addEventListener("error", go, { once: true });
+        }
+
+        setTimeout(go, 800);
       })();
     </script>
     <noscript>
