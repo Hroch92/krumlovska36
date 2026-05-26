@@ -1,4 +1,4 @@
 ---
 layout: go-redirect
-redirect_to: "https://mapy.com/s/gecevurobo"
+redirect_url: "https://mapy.com/s/gecevurobo"
 ---

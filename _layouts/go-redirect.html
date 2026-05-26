@@ -9,7 +9,7 @@ layout: nil
     <title>Přesměrování...</title>
     <meta name="robots" content="noindex, nofollow">
   </head>
-  <body data-redirect-to="{{ page.redirect_to | escape }}">
+  <body data-redirect-to="{{ page.redirect_url | escape }}">
      <script
        data-goatcounter="https://krumlovska36.goatcounter.com/count"
        src="//gc.zgo.at/count.js"></script>
@@ -41,8 +41,8 @@ layout: nil
       })();
     </script>
     <noscript>
-      <meta http-equiv="refresh" content="0;url={{ page.redirect_to | escape }}">
-      <a href="{{ page.redirect_to | escape }}">Pokračovat</a>
+      <meta http-equiv="refresh" content="0;url={{ page.redirect_url | escape }}">
+      <a href="{{ page.redirect_url | escape }}">Pokračovat</a>
     </noscript>
   </body>
 </html>
