@@ -10,20 +10,14 @@ layout: nil
     <meta name="robots" content="noindex, nofollow">
   </head>
   <body data-redirect-to="{{ page.redirect_to | escape }}">
-    <p>Přesměrování...</p>
-    <img
-      id="goatcounter-pixel"
-      src="https://krumlovska36.goatcounter.com/count?p={{ page.url | uri_escape }}"
-      alt=""
-      width="1"
-      height="1"
-      style="position:absolute;left:-9999px;width:1px;height:1px"
-      referrerpolicy="no-referrer-when-downgrade">
+     <script
+       data-goatcounter="https://krumlovska36.goatcounter.com/count"
+       src="//gc.zgo.at/count.js"></script>
+     <p>Přesměrování...</p>
     <script>
       (function () {
         var target = document.body.getAttribute("data-redirect-to") || "/";
         var redirected = false;
-        var pixel = document.getElementById("goatcounter-pixel");
 
         function go() {
           if (redirected) {
@@ -33,12 +27,17 @@ layout: nil
           window.location.replace(target);
         }
 
-        if (pixel) {
-          pixel.addEventListener("load", go, { once: true });
-          pixel.addEventListener("error", go, { once: true });
-        }
+        // Wait for GoatCounter script to load and log pageview.
+        var checkCounter = setInterval(function () {
+          if (window.goatcounter) {
+            clearInterval(checkCounter);
+            // Give GoatCounter a moment to send the pageview.
+            setTimeout(go, 100);
+          }
+        }, 10);
 
-        setTimeout(go, 800);
+        // Fallback timeout if GoatCounter doesn't load.
+        setTimeout(go, 2000);
       })();
     </script>
     <noscript>
