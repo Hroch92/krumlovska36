@@ -10,24 +10,20 @@ layout: nil
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="refresh" content="2;url={{ page.redirect_to | escape }}">
   </head>
-  <body>
+  <body data-redirect-to="{{ page.redirect_to | escape }}">
     <p>Přesměrování...</p>
     <script>
       (function () {
-        var target = {{ page.redirect_to | jsonify }};
+        var target = document.body.getAttribute("data-redirect-to") || "/";
         var endpoint = "https://krumlovska36.goatcounter.com/count";
         var params = new URLSearchParams({
           p: window.location.pathname,
           t: "go-redirect",
-          r: document.referrer || "",
-          e: "true"
+          r: document.referrer || ""
         });
 
-        if (navigator.sendBeacon) {
-          navigator.sendBeacon(endpoint, params);
-        } else {
-          (new Image()).src = endpoint + "?" + params.toString();
-        }
+        // GET request is reliable for short-lived redirect pages.
+        (new Image()).src = endpoint + "?" + params.toString();
 
         setTimeout(function () {
           window.location.replace(target);
