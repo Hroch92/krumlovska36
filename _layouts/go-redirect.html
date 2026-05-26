@@ -9,25 +9,18 @@ layout: nil
     <title>Přesměrování...</title>
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="refresh" content="2;url={{ page.redirect_to | escape }}">
+    <script
+      data-goatcounter="https://krumlovska36.goatcounter.com/count"
+      src="//gc.zgo.at/count.js"></script>
   </head>
   <body data-redirect-to="{{ page.redirect_to | escape }}">
     <p>Přesměrování...</p>
     <script>
       (function () {
         var target = document.body.getAttribute("data-redirect-to") || "/";
-        var endpoint = "https://krumlovska36.goatcounter.com/count";
-        var params = new URLSearchParams({
-          p: window.location.pathname,
-          t: "go-redirect",
-          r: document.referrer || ""
-        });
-
-        // GET request is reliable for short-lived redirect pages.
-        (new Image()).src = endpoint + "?" + params.toString();
-
         setTimeout(function () {
           window.location.replace(target);
-        }, 180);
+        }, 350);
       })();
     </script>
     <noscript>
